@@ -1,0 +1,91 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-left-section {
+    flex: 70%;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIXstg7NpzcHV3bF2pXRNYAJx_Pa4grd-sED92UQh8yltJ30yjUJ9131IbpdIqhDuU0c4&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding:15px;
+  }
+  /* General Styles */
+input {
+    margin-bottom: 15px; /* Space between input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  button {
+    padding: 10px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+  /* Overlapping images */
+  .login-rounded-images {
+    display: flex; /* Align images horizontally */
+    align-items: center; /* Center images vertically */
+    margin-bottom: 20px; /* Space below images */
+  }
+  
+  .login-rounded-images img {
+    border-radius: 50%; /* Make images round */
+    width: 50px; /* Image size */
+    height: 50px; /* Image size */
+    object-fit: cover; /* Crop image to fit */
+    margin-right: -10px; /* Overlap images */
+  }
+  
+  
+  .login-right-section {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f7f7f7;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  button {
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .sign-up-link {
+    margin-top: 1rem;
+  }
+  
+  .login-rounded-images img {
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    width: 50px;
+    height: 50px;
+  }
+  

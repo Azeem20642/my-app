@@ -1,0 +1,259 @@
+/* Basic Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for Sign-Up Page */
+.sign-up-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Section */
+.left-section {
+  flex: 70%;
+  background: blue;
+  background-size: cover;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading and Text in Left Section */
+.left-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Rounded Images */
+.rounded-images {
+  display: flex;
+  gap: 10px;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.dashboard-container {
+  padding: 20px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.user-info p {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.rounded-images img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Right Section */
+.right-section {
+  flex: 30%;
+  background: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+/* Extra Small Screens (Portrait Phones, 0-576px) */
+@media (max-width: 576px) {
+  .sign-up-container {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left-section {
+    background-size: contain;
+  }
+
+  .left-section h1 {
+    font-size: 1.8em;
+  }
+
+  .left-section p {
+    font-size: 1em;
+  }
+
+  .rounded-images img {
+    width: 60px;
+    height: 60px;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+  }
+}
+
+/* Small Screens (Landscape Phones, 577px-768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .sign-up-container {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    flex: none;
+    width: 100%;
+  }
+
+  .left-section {
+    background-size: contain;
+  }
+
+  .left-section h1 {
+    font-size: 2em;
+  }
+
+  .left-section p {
+    font-size: 1.1em;
+  }
+
+  .rounded-images img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Medium Screens (Tablets, 769px-992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .sign-up-container {
+    flex-direction: row;
+  }
+
+  .left-section {
+    padding: 30px;
+  }
+
+  .right-section {
+    padding: 30px;
+  }
+
+  .left-section h1 {
+    font-size: 2.2em;
+  }
+
+  .left-section p {
+    font-size: 1.15em;
+  }
+}
+
+/* Large Screens (Desktops, 993px-1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .sign-up-container {
+    flex-direction: row;
+  }
+
+  .left-section {
+    padding: 40px;
+  }
+
+  .right-section {
+    padding: 40px;
+  }
+
+  .left-section h1 {
+    font-size: 2.4em;
+  }
+
+  .left-section p {
+    font-size: 1.2em;
+  }
+}
+
+/* Extra Large Screens (Large Desktops, 1201px and up) */
+@media (min-width: 1201px) {
+  .sign-up-container {
+    flex-direction: row;
+  }
+
+  .left-section {
+    padding: 50px;
+  }
+
+  .right-section {
+    padding: 50px;
+  }
+
+  .left-section h1 {
+    font-size: 2.5em;
+  }
+
+  .left-section p {
+    font-size: 1.25em;
+  }
+}
